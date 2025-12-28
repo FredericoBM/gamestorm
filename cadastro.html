@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta | GameStorm</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="C:\Users\dulci\OneDrive\Área de Trabalho\aposta\css\style.css">
+    <link rel="stylesheet" href="C:\Users\dulci\OneDrive\Área de Trabalho\aposta\css\cadastro.css">
+</head>
+<body class="auth-page">
+
+    <a href="C:\Users\dulci\OneDrive\Área de Trabalho\aposta\index.html" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Voltar ao Início
+    </a>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo">GAME<span>STORM</span></div>
+                <h1>Crie sua conta</h1>
+                <p>Junte-se a milhares de jogadores agora mesmo.</p>
+            </div>
+
+            <form id="form-cadastro" title="Formulário de Cadastro">
+                <div class="input-group">
+                    <label for="username">Nome de Usuário</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user-tag"></i>
+                        <input type="text" id="username" placeholder="Ex: Player_Elite" 
+                               minlength="3" maxlength="15" pattern="^[a-zA-Z0-9_]+$" 
+                               title="Apenas letras, números e underline (_). Entre 3 e 15 caracteres." required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="Mínimo 8 caracteres" 
+                                   minlength="8" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirmar</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <input type="password" id="confirm-password" placeholder="Repita a senha" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="error-message" style="color: #ff4d4d; font-size: 0.85rem; margin-bottom: 15px; padding: 10px; background: rgba(255,77,77,0.1); border-radius: 8px; border-left: 4px solid #ff4d4d; display: none;"></div>
+
+                <div class="terms-check">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Eu aceito os <a href="#">Termos de Uso</a> e a <a href="#">Privacidade</a>.</label>
+                </div>
+
+                <button type="submit" class="btn-main signup-btn">CRIAR CONTA GRÁTIS</button>
+            </form>
+
+            <div class="separator">
+                <span>ou cadastre-se com</span>
+            </div>
+
+            <div class="social-auth">
+                <button class="social-btn discord" type="button">
+                    <i class="fa-brands fa-discord"></i> Discord
+                </button>
+                <button class="social-btn google" type="button">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
+            </div>
+
+            <p class="login-link">
+                Já tem uma conta? <a href="login.html">Fazer Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="C:\Users\dulci\OneDrive\Área de Trabalho\aposta\js\cadastro.js"></script>
+
+</body>
+</html>
